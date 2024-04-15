@@ -9,6 +9,19 @@ body {
 button{
     text-align: center;
 }
+.intelligence{
+    color: black;
+    background-color: aqua;
+}
+.force{
+    color: black;
+    background-color: palevioletred;
+}
+
+.velocity{
+    color: black;
+    background-color: palevioletred;
+}
 
 .container {
     display: flex;
@@ -16,13 +29,12 @@ button{
 
 .your_cards { 
     width: 600px;
-    border: 2px solid black;
     margin: 70px 20px 10px 60px; 
 }
 
 .enemy_cards {
+
     width: 600px; 
-    border: 2px solid rgb(255, 0, 200);
     box-sizing: border-box;
     margin-top: 70px;
     margin-left: auto; 
