@@ -7,22 +7,59 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    
     <div id="your_cartas" class="your_cards">
         <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <p>meus pontos:<span id="meusPontos">0</span></p>
         </div>
-       <p>inteligencia: <span id="attackPoints">0</span></p>
-       <p>força: <span id="agilitPoints">0</span></p>
-       <p>velocidade <span id="velocityPoints">0</span></p>
+        <div>
+            <img id="cabeca" ></img>
+            <img id="corpo"></img>
+            <img id="perna"></img>
+        </div>
+       <p>força: <span id="strengthPoints">0</span></p>
+       <p>inteligência: <span id="intellpoints">0</span></p>
+       <p>velocidade: <span id="agilitPoints">0</span></p>
+       <div>
+        <div class="acessorios">
+            <img id="acessorio1"></img>
+        </div>
+        <div class="acessorios">
+            <img id="acessorio2"></img>
+        </div>
+        <div class="acessorios">
+            <img id="acessorio3"></img>
+        </div>
+       </div>
     </div>
     <img class="alignSword" src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/2694.png" width="40" height="40">
     <div id="enemy_cards" class="enemy_cards">
-        <img src="imgs/carta/cartaAtras-removebg-preview.png">
+        <p>pontos do inimigo<span id="PontosDoinimigo">0</span></p>
+        <div>
+            <img id="cabecaInimigo"></img>
+            <img id="corpoInimigo"></img>
+            <img id="pernaInimigo"></img>
+        </div>
+        <div>
+            <p>força:<span id="enemysStregthPoints">0</span></p>
+            <p>inteligência:<span id="enemysIntellPoints">0</span></p>
+            <p>velocidade:<span id="enemyagilitPoints">0</span></p>
+        </div>
+        <div>
+            <div class="acessorios">
+                <img id="acessorio1Ene"></img>
+            </div>
+            <div class="acessorios">
+                <img id="acessorio2Ene"></img>
+            </div>    
+            </div>
+            <div class="acessorios">
+                <img id="acessorio3Ene"></img>
+            </div>           
+        </div>
     </div>
-    <button id="initGame">começar</button>
+    <div>
+        <button id="initGame">começar</button>        
+    </div>
     <script src="src/script.js"></script>
 </body>
 </html>

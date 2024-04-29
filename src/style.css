@@ -1,26 +1,10 @@
 body {
     display: flex;
     justify-content: space-between; 
-    background-color: aliceblue;
+    background-color: blue;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-}
-button{
-    text-align: center;
-}
-.intelligence{
-    color: black;
-    background-color: aqua;
-}
-.force{
-    color: black;
-    background-color: palevioletred;
-}
-
-.velocity{
-    color: black;
-    background-color: palevioletred;
 }
 
 .container {
@@ -29,17 +13,29 @@ button{
 
 .your_cards { 
     width: 600px;
+    border: 2px solid black;
     margin: 70px 20px 10px 60px; 
+    background-color: aliceblue;
 }
 
 .enemy_cards {
-
     width: 600px; 
+    border: 2px solid rgb(255, 0, 200);
     box-sizing: border-box;
     margin-top: 70px;
     margin-left: auto; 
+    background-color: aliceblue;
 }
 
 .alignSword{
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-right: 15px
+}
+.win{
+    font-size: 22px;
+}
+
+.acessorios{
+    border: 2px solid black;
+    background-color: aliceblue;
 }
