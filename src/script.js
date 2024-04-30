@@ -21,44 +21,44 @@ let yourPoints = document.getElementById('meusPontos');
 let enemypoints = document.getElementById('PontosDoinimigo');
 const initBtn = document.getElementById('initGame');
 
-// Passando as configurações do inimigo
+// Passando as imagens
 const cabeca = [
-    'imgs/atores/cabeçaCapivara.png',
-    'imgs/atores/cabeçaJacare.png',
-    'imgs/atores/passaroCabeça.png',
-    'imgs/atores/cabeçaSapo.png'
+    'src/imgs/atores/cabeçaCapivara.png',
+    'src/imgs/atores/cabeçaJacare.png',
+    'src/imgs/atores/passaroCabeça.png',
+    'src/imgs/atores/cabeçaSapo.png'
 ];
 
 const corpo = [
-    'imgs/atores/capivaraCorpo.png',
-    'imgs/atores/jacaréCorpo.png',
-    'imgs/atores/sapoCorpo.png',
-    'imgs/atores/passaroCorpo.png'
+    'src/imgs/atores/capivaraCorpo.png',
+    'src/imgs/atores/jacaréCorpo.png',
+    'src/imgs/atores/sapoCorpo.png',
+    'src/imgs/atores/passaroCorpo.png'
 ];
 
 const perna = [
-    'imgs/atores/capivaraPerna.png',
-    'imgs/atores/sapoPerna.png',
-    'imgs/atores/passaroPerna.png',
-    'imgs/atores/jacarePerna.png'
+    'src/imgs/atores/capivaraPerna.png',
+    'src/imgs/atores/sapoPerna.png',
+    'src/imgs/atores/passaroPerna.png',
+    'src/imgs/atores/jacarePerna.png'
 ];
 
 const acessorios = [
-    'imgs/acessorios/assasFadas.png',
-    'imgs/acessorios/assasMorcego.png',
-    'imgs/acessorios/cachecol.png',
-    'imgs/acessorios/chapeu.png',
-    'imgs/acessorios/colar.png',
-    'imgs/acessorios/escudo.png',
-    'imgs/acessorios/espada.png',
-    'imgs/acessorios/galochas.png',
-    'imgs/acessorios/picareta.png',
-    'imgs/acessorios/skate.png',
-    'imgs/acessorios/tocha.png',
-    'imgs/acessorios/varinha.png'
+    'src/imgs/acessorios/assasFadas.png',
+    'src/imgs/acessorios/assasMorcego.png',
+    'src/imgs/acessorios/cachecol.png',
+    'src/imgs/acessorios/chapeu.png',
+    'src/imgs/acessorios/colar.png',
+    'src/imgs/acessorios/escudo.png',
+    'src/imgs/acessorios/espada.png',
+    'src/imgs/acessorios/galochas.png',
+    'src/imgs/acessorios/picareta.png',
+    'src/imgs/acessorios/skate.png',
+    'src/imgs/acessorios/tocha.png',
+    'src/imgs/acessorios/varinha.png'
 ];
 
-// Gerando os pontos de ataque
+
 function generatePoints() {
     return Math.floor(Math.random() * 500);
 }
@@ -67,8 +67,7 @@ function addPoints(element) {
     const newPoint = generatePoints();
     element.textContent = newPoint;
 }
-
-// Passando as imagens
+//passando as imagens
 function setImage(element, images) {
     let randomIndex = Math.floor(Math.random() * images.length);
     element.src = images[randomIndex];
